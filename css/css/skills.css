@@ -1,0 +1,169 @@
+
+.skills{
+    font-size: 1.5rem;
+}
+
+.topic{
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
+    margin:3vw;
+}
+
+.sub-topic{
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
+    margin:3vw;
+}
+
+.paragraph{
+    margin:0px 10vw;
+    text-align: justify;
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+.programming{
+    text-align: center;
+    margin-bottom:5vh;
+}
+
+.programming-skills{
+    width: 60%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+}
+
+.programming-skills div{
+    display: flex;
+    margin: 10px;
+    position: relative;
+    top:0px;
+    left:0px;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 100%;
+    justify-content: space-between;
+    transition: 1s;
+    color: rgb(21, 78, 184);
+
+}
+
+.programming-skills div p{
+    margin-right: 10px;
+    padding:10px 0px;
+}
+
+.programming-skills div p:first-child{
+    padding-left: 10px;
+}
+
+.programming-skills div::before{
+    position: absolute;
+    content:"";
+    height: 2.5em;
+    width: 0em;
+    background-color: rgba(19, 15, 39, 0.9);
+    transition: 1s;
+    z-index: -1;
+}
+
+.programming-skills .cpp::before{
+    width: 20%;
+}
+.programming-skills .python::before{
+    width: 50%;
+}
+.programming-skills .java::before{
+    width: 60%;
+}
+.programming-skills .html::before{
+    width: 80%;
+}
+.programming-skills .css::before{
+    width: 20%;
+}
+.programming-skills .java-script::before{
+    width: 10%;
+}
+.programming-skills .mysql::before{
+    width: 30%;
+}
+
+
+.programming-skills .cpp:hover::before{
+    width: 20%;
+    background-color: rgb(0, 0, 0);
+}
+.programming-skills .python:hover::before{
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+}
+.programming-skills .java:hover::before{
+    width: 60%;
+    background-color: rgb(0, 0, 0);
+}
+.programming-skills .html:hover::before{
+    width: 80%;
+    background-color: rgb(0, 0, 0);
+}
+.programming-skills .css:hover::before{
+    width: 20%;
+    background-color: rgb(0, 0, 0);
+}
+.programming-skills .java-script:hover::before{
+    width: 10%;
+    background-color: rgb(0, 0, 0);
+}
+.programming-skills .mysql:hover::before{
+    width: 30%;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+.programming-skills div:hover{
+    position: relative;
+    top:-5px;
+    left:-5px;
+    box-shadow: 5px 5px 5px rgba(58, 65, 80, 0.2);
+    color: rgb(25, 122, 212);
+    z-index: 1;
+}
+
+
+@media (max-width:800px){
+    .topic{
+        font-size: 0.95em;
+    }
+    .sub-topic{
+        font-size: 0.9em;
+    }
+    .programming{
+        font-size: 0.85em;
+    }
+    .programming-skills{
+        font-size: 0.8em;
+    }
+    .paragraph{
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width:400px){
+    .paragraph{
+        font-size: 0.5em;
+    }
+    .topic{
+        font-size: 0.7em;
+    }
+    .sub-topic{
+        font-size: 0.6em;
+    }
+    .programming-skills{
+        font-size: 0.5em;
+    }
+}
