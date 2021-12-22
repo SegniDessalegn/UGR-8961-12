@@ -1,0 +1,202 @@
+
+.topic{
+    margin-top:5vh;
+    margin-bottom:5vh;
+    text-align: center;
+
+}
+
+.container{
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    "contact comment";
+    margin-right:5vw;
+    margin-left:5vw;
+    border-radius: 20px;
+    height: 80vh;
+    background-color: rgba(19, 15, 39, 0.2);
+}
+
+img{
+    width: 25px;
+}
+
+.contact{
+    grid-area: contact;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    margin:10px;
+    padding:10px;
+    border-radius: 20px;
+}
+
+.contact article{
+    margin-bottom: 20px;
+}
+
+.sub-topic{
+    font-size: 1.5em;
+    text-align: center;
+    width:inherit;
+    margin-top:10px;
+}
+
+.phone{
+    display: flex;
+}
+
+.phone .phone-number{
+    line-height: 50px;
+    margin-left: 10px;
+    font-size:1.5em;
+}
+
+.contact-links .navigation a{
+    margin:3px;
+}
+
+
+.comments{
+    border-radius: 20px;
+    height: 70vh;
+    margin-top:5vh;
+    margin:1vw;
+}
+.comments *{
+    display: block;
+}
+.comments article{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+label{
+    margin-top:20px;
+    margin-bottom:5px;
+    text-align: center;
+}
+
+input, textarea{
+    margin-top:10px;
+    width: 40vw;
+}
+
+.send{
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    top:50px;
+    width:50%;
+    height: 3em;
+    border: 1px solid rgba(19, 15, 39, 0.5);
+}
+
+input{
+    height: 3em;
+    background-color: transparent;
+    border:none;
+    border-bottom:1px solid;
+    padding-left:10px;
+}
+
+textarea{
+    background-color: transparent;
+    transition: 1s;
+    padding:10px;
+    resize: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input:focus{
+    background-color: rgba(19, 15, 39, 0.9);
+    color:white;
+}
+
+textarea:focus{
+    background-color: rgba(19, 15, 39, 0.9);
+    color:white;
+    padding:15px;
+}
+
+textarea:active{
+    background-color: rgba(19, 15, 39, 1);
+}
+
+input:hover, textarea:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    transition: 1s;
+}
+
+.send:hover{
+    background-color: rgba(19, 15, 39, 0.9);
+    color:white;
+}
+
+label, textarea, input, form div{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.container a:hover{
+    position: relative;
+    top:1px;
+    left:-1px;
+
+}
+
+
+@media (max-width:800px){
+    .container{
+        display: flex;
+        flex-direction:column-reverse;
+        height: auto;
+    }
+    .topic{
+        font-size: 90%;
+    }
+    .sub-topic{
+        font-size: 140%;
+    }
+    input, textarea{
+        width:80%;
+    }
+
+    .phone{
+        font-size: 70%;
+    }
+    img{
+        width:25px;
+    }
+}
+
+
+@media (max-width:500px){
+    .container{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .topic{
+        font-size: 75%
+    }
+    .sub-topic{
+        font-size: 110%;
+    }
+
+    input, textarea{
+        width:70%;
+    }
+
+    .phone{
+        font-size: 50%;
+    }
+    img{
+        width:15px;
+    }
+}
