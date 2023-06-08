@@ -72,19 +72,19 @@
 }
 
 .programming-skills .python:hover::before{
-    width: 100%;
-}
-.programming-skills .machine-learning:hover::before{
     width: 90%;
 }
+.programming-skills .machine-learning:hover::before{
+    width: 70%;
+}
 .programming-skills .deep-learning:hover::before{
-    width: 80%;
+    width: 65%;
 }
 .programming-skills .front-end:hover::before{
-    width: 60%;
+    width: 85%;
 }
 .programming-skills .back-end:hover::before{
-    width: 50%;
+    width: 65%;
 }
 
 .programming-skills div:hover{
